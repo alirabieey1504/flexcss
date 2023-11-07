@@ -1,0 +1,70 @@
+.header {
+    grid-column: 1/-1;
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #4d4c4c00, #000000), url("../image/H4.jpg");
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.header-centers {
+    color: rgb(70, 76, 81);
+}
+
+.header-center1 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.header-center2 {
+
+    text-transform: uppercase;
+}
+
+.header-center3 {
+    padding: 20px 30px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: rgba(198, 252, 248, 0.125);
+    color: white;
+    outline: none;
+    border:1pc rgba(198, 252, 248, 0.197);
+    font-size: 14px;
+    align-self: center;
+    cursor: pointer;
+    transition: all 0.4s ;
+    justify-self: center;
+
+}
+.header-center3:hover{
+    background-color: #ffffff66;
+    color: #000000;
+}
+@media screen and (max-width:570px) {
+    .header{
+        background-position-x: 10%;
+    }
+    .header-center1{
+        font-size: 20px;
+    }
+    .header-center2{
+        font-size: 25px;
+    }
+    .header-center3{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:360px) {
+ .header{
+    background-position-x:30% ;
+
+ }
+}

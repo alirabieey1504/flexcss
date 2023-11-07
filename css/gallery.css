@@ -1,0 +1,139 @@
+.gallery {
+
+    grid-column: 1/-1;
+
+}
+
+.gallery-main {
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(3, 280px);
+    grid-template-columns: repeat(3, 1fr);
+   
+    padding: 20px 50px;
+    grid-gap: 20px;
+}
+
+.gallery {
+    width: 100%;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.gallery1 {
+    background-image: url("../image/610.jpg");
+     grid-row: 1/2;
+    grid-column: 1/3; 
+    grid-area: "1";
+}
+
+.gallery2 {
+    background-image: url("../image/jip.jpg");
+    grid-column: 3/4;
+    grid-row: 1/3;
+    grid-area: "2";
+
+}
+
+.gallery3 {
+    background-image: url("../image/de.jpg");
+    grid-row: 2/3;
+    grid-column: 2/3;
+    grid-area: "3";
+
+}
+
+.gallery4 {
+    background-image: url("../image/sip.jpg");
+    grid-area: "4";
+
+    grid-row: 2/4;
+    grid-column: 1/2;
+}
+
+.gallery5 {
+    background-image: url("../image/pic3.jpg");
+    grid-area: "5";
+
+    grid-row: 3/4;
+    grid-column: 2/4;
+}
+@media screen and (max-width:1000px) {
+    .gallery2{
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    .gallery3{
+        grid-row: 2/3;
+        grid-column: 2/4;
+    }
+    .gallery4{
+        grid-row: 2/3;
+    }
+    .gallery5{
+        grid-column: 1/4;
+    }
+}
+@media screen and (max-width:600px){
+    .gallery-main{
+        grid-template-rows: repeat(4, 280px);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery1{
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .gallery2{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .gallery3{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .gallery4{
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+    .gallery5{
+        grid-row: 4/5;
+        grid-column: 1/3;
+    }
+}
+
+
+@media screen and (max-width:460px){
+    .gallery-main{
+        grid-template-rows: repeat(5, 280px);
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .gallery1{
+        grid-column: 1/2;
+    
+    }
+    .gallery2{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .gallery3{
+        grid-row: 3/4;
+        grid-column: 1/2;
+
+    }
+    .gallery4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .gallery5{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+
+   
+} 

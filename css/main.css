@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: "vazir";
+    font-size: 24px;
+}
+
+.contaner {
+    display: grid;
+    grid-template-rows: 80vh repeat(5, max-content);
+    grid-template-columns: repeat(6, 1fr);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.story-order {
+    padding: 43px;
+    text-align: center;
+    color: rgba(35, 65, 90, 0.992);
+    height: 120px;
+
+}
+
+.story-order:before,
+.story-order:after {
+    background-color: black;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
+}
+.story-order:before{
+    right: 0.5rem;
+    margin-left: -50%;
+}
+.story-order:after{
+    left: 0.5rem;
+    margin-right: -50%;
+}
